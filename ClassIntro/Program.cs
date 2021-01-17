@@ -6,7 +6,7 @@ namespace ClassIntro
     {
         static void Main(string[] args)
         {
-            string adi = "Engin";
+            string adi = "Ömer";
             int yas = 36;
 
             Kurs kurs1 = new Kurs();
@@ -29,20 +29,16 @@ namespace ClassIntro
             kurs4.Egitmen = "Murat Kurtboğan";
             kurs4.IzlenmeOrani = 100;
 
-
-
-
-            //Console.WriteLine(kurs1.KursAdi + " : " + kurs1.Egitmen);
+            //Console.WriteLine(kurs1.KursAdi + " : " + kurs1.Egitmen + " : " + kurs1.IzlenmeOrani);
 
             Kurs[] kurslar = new Kurs[] { kurs1, kurs2, kurs3, kurs4 };
 
             foreach (var kurs in kurslar)
             {
-                Console.WriteLine(kurs.KursAdi + " : " + kurs.Egitmen);
+                Console.WriteLine(kurs.KursAdi + " : " +kurs.Egitmen + " : " + kurs.IzlenmeOrani);
             }
+            
 
-
-            //Console.WriteLine("Hello World!");
         }
     }
 
@@ -51,5 +47,6 @@ namespace ClassIntro
         public string KursAdi { get; set; }
         public string Egitmen { get; set; }
         public int IzlenmeOrani { get; set; }
+
     }
 }
